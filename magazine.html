@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BTS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: rgb(115, 115, 115);
+      }
+
+      .navbar-brand {
+        color: lavenderblush;
+      }
+
+      .head1 {
+        text-align: center;
+        color: lavenderblush;
+        font-family: Bahnschrift SemiBold;
+      }
+
+      .head2 {
+        text-align: center;
+        color: lavenderblush;
+        font-family: Bahnschrift SemiBold;
+      }
+
+      .p1 {
+        margin: 0 auto;
+        width: 75%;
+        color: lavenderblush;
+        font-family: Bahnschrift;
+      }
+
+      .a1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      #rmcolor {
+        background-color: rgba(25, 25, 112, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      #jincolor {
+        background-color: rgba(255, 105, 180, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      #sugacolor {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      #jhopecolor {
+        background-color: rgba(255, 0, 0, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      #jimincolor {
+        background-color: rgba(192, 165, 14, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      #vcolor {
+        background-color: rgba(41, 141, 11, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      #jkcolor {
+        background-color: rgba(174, 0, 255, 0.5);
+        font-family: Bahnschrift SemiBold;
+        color: lavenderblush;
+        text-align: center;
+      }
+
+      .bg1 {
+        background-color: rgba(25, 25, 112, 0.5);
+      }
+
+      .bg2 {
+        background-color: rgba(255, 105, 180, 0.5);
+      }
+
+      .bg3 {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .bg4 {
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+
+      .bg5 {
+        background-color: rgba(192, 165, 14, 0.5);
+      }
+
+      .bg6 {
+        background-color: rgba(41, 141, 11, 0.5);
+      }
+
+      .bg7 {
+        background-color: rgba(174, 0, 255, 0.5);
+      }
+
+      #bgcanvas {
+        background-color: rgb(115, 115, 115);
+      }
+
+      .navbar-toggler {
+        background-color: violet;
+        color: violet;
+      }
+
+      .offcanvas-header {
+        font-family: Bahnschrift SemiBold;
+      }
+
+      .navbar-brand {
+        color: black;
+      }
+
+      #link {
+        color: lavenderblush;
+        font-family: Bahnschrift;
+      }
+
+      @media (min-width: 0px) {
+        .article1 {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .article2 {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .pic1 {
+          align-self: center;
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 1147px) {
+        .article1 {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .article2 {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .pic1 {
+          height: 573px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top" id="navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler mx-right"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start text-bg-light"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                BTS MEMBER
+              </h5>
+            </a>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body" id="bgcanvas">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#rm" id="rmcolor">RM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jin" id="jincolor">Jin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#suga" id="sugacolor">SUGA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jhope" id="jhopecolor">j-hope</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jimin" id="jimincolor">Jimin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#v" id="vcolor">V</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jk" id="jkcolor">Jung Kook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <article class="content" id="rm">
+      <div class="bg1">
+        <div class="article1">
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-rm.jpg"
+            class="pic1"
+          />
+          <div class="a1">
+            <h2 class="head1">RM</h2>
+            <p class="head2">
+              Kim Nam-joon (Korean: 김남준; born September 12, 1994)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia curae; Ut scelerisque porta
+              tortor, sed bibendum libero interdum vel. Sed condimentum dolor ut
+              posuere feugiat. Suspendisse tempor ligula sed elit consectetur,
+              ut volutpat orci ullamcorper. Integer finibus sagittis nunc sit
+              amet ornare. Proin molestie commodo blandit. Duis vitae elit
+              porttitor, suscipit nibh sit amet, rutrum sapien. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus. Suspendisse sit
+              amet lectus dignissim, euismod felis at, rhoncus ligula. Etiam vel
+              diam luctus, pretium erat id, aliquam massa. In risus libero,
+              placerat luctus dictum eget, sagittis eu ipsum. Suspendisse
+              potenti. Ut ultricies mi ut facilisis blandit. Nulla sodales lorem
+              nulla, sed hendrerit augue efficitur at. Morbi pharetra leo
+              libero, eu suscipit arcu euismod sit amet. Vestibulum imperdiet
+              tortor nec magna viverra tempor.<br />>>
+              <a href="https://youtu.be/u18be_kRmC0" id="link" target="_blank"
+                >RM 'Wild Flower (with youjeen)' Official MV</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="bg2" id="jin">
+        <div class="article2">
+          <div class="a1">
+            <h2 class="head1">Jin</h2>
+            <p class="head2">
+              Kim Seok-jin (Korean: 김석진; born December 4, 1992)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Sed lacus tortor, accumsan eget metus quis,
+              interdum pretium ex. Maecenas et purus ultricies, efficitur felis
+              consectetur, condimentum dui. Donec pretium eros hendrerit nisi
+              porta, quis tincidunt odio auctor. Duis ante ipsum, scelerisque
+              sed scelerisque nec, varius sed est. Mauris ligula massa,
+              condimentum et mollis et, aliquet pharetra elit. Suspendisse
+              placerat commodo diam, nec efficitur mauris fermentum ut. Maecenas
+              at condimentum dui. Sed eleifend nisl aliquet ultricies pulvinar.
+              Suspendisse id pellentesque arcu, ut laoreet ante. Praesent
+              imperdiet ligula vel nisl suscipit vehicula. Donec vulputate, urna
+              in sollicitudin lacinia, augue dui sodales sapien, eget feugiat
+              turpis urna id augue. Sed vitae porttitor neque. Proin commodo
+              sollicitudin ex, eu fringilla lectus ullamcorper et. Ut vitae
+              dolor vehicula ex porttitor tincidunt. Curabitur eget accumsan
+              purus.<br />>>
+              <a href="https://youtu.be/c6ASQOwKkhk" id="link" target="_blank"
+                >진 (Jin) 'The Astronaut' Official MV</a
+              >
+            </p>
+          </div>
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-jin.jpg"
+            class="pic1"
+          />
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="bg3" id="suga">
+        <div class="article1">
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-suga.jpg"
+            class="pic1"
+          />
+          <div class="a1">
+            <h2 class="head1">SUGA</h2>
+            <p class="head2">
+              Min Yoon-gi (Korean: 민윤기; born March 9, 1993)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Nulla mi nulla, vulputate id dolor auctor,
+              ornare placerat orci. Vivamus tristique justo felis, vel varius
+              dui imperdiet ac. Morbi sodales cursus cursus. Fusce est turpis,
+              commodo at porttitor sed, viverra a metus. Suspendisse sed urna
+              vestibulum, faucibus odio vitae, dictum erat. Curabitur a enim
+              imperdiet magna dictum pharetra ut vitae eros. Etiam suscipit
+              sagittis fringilla.<br />>>
+              <a href="https://youtu.be/PV1gCvzpSy0" id="link" target="_blank"
+                >BTS (방탄소년단) MAP OF THE SOUL : 7 'Interlude : Shadow'
+                Comeback Trailer</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="bg4" id="jhope">
+        <div class="article2">
+          <div class="a1">
+            <h2 class="head1">j-hope</h2>
+            <p class="head2">
+              Jung Ho-seok (Korean: 정호석; born February 18, 1994)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Fusce maximus tincidunt leo, ut accumsan sem
+              interdum ac. Quisque vulputate, magna ut aliquet dapibus, elit
+              magna egestas nunc, sit amet eleifend felis sapien id ligula. Sed
+              ultricies eros risus, nec ullamcorper dolor dictum quis. In
+              viverra dignissim nunc, ac eleifend nisl pellentesque ut. Praesent
+              et facilisis lectus. Cras dignissim, erat vitae semper tempor,
+              augue massa elementum leo, mollis auctor massa mauris dapibus
+              nibh. Quisque venenatis nisl vitae leo venenatis, sit amet tempor
+              sapien placerat.<br />>>
+              <a href="https://youtu.be/_hNuNiNhcI4" id="link" target="_blank"
+                >j-hope '= (Equal Sign)' Visualizer</a
+              >
+            </p>
+          </div>
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-jhope.jpg"
+            class="pic1"
+          />
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="bg5" id="jimin">
+        <div class="article1">
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-jimin.jpg"
+            class="pic1"
+          />
+          <div class="a1">
+            <h2 class="head1">Jimin</h2>
+            <p class="head2">
+              Park Ji-min (Korean: 박지민; born October 13, 1995)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Interdum et malesuada fames ac ante ipsum primis
+              in faucibus. Etiam placerat velit a dignissim commodo. Ut faucibus
+              sem eget elit ultricies, ut molestie ipsum ullamcorper. In
+              sagittis tincidunt diam, id iaculis diam. Morbi vel mollis nunc,
+              et pulvinar elit. Etiam vitae euismod diam, sit amet egestas
+              dolor. In eget dui velit. Integer non lacus dui. Phasellus
+              consequat ultrices vulputate. Nam facilisis sem eu quam dictum,
+              vitae pellentesque justo eleifend.<br />>>
+              <a href="https://youtu.be/cXCBiF67jLM" id="link" target="_blank"
+                >TAEYANG - 'VIBE (feat. Jimin of BTS)' M/V</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="bg6" id="v">
+        <div class="article2">
+          <div class="a1">
+            <h2 class="head1">V</h2>
+            <p class="head2">
+              Kim Tae-hyung (Korean: 김태형; born December 30, 1995)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Aenean aliquet nunc nec odio tincidunt, eleifend
+              tincidunt nibh interdum. Donec sed nulla justo. Nulla lobortis
+              ante mauris, in elementum libero elementum interdum. Suspendisse
+              potenti. Nulla ut imperdiet magna. Interdum et malesuada fames ac
+              ante ipsum primis in faucibus. Donec ut risus risus. Cras et
+              consectetur nunc.<br />>>
+              <a href="https://youtu.be/lj8TV9q59P4" id="link" target="_blank"
+                >V - Christmas Tree</a
+              >
+            </p>
+          </div>
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-v.jpg"
+            class="pic1"
+          />
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="bg7" id="jk">
+        <div class="article1">
+          <img
+            src="https://ibighit.com/bts/images/profile/proof/member/member-jk.jpg"
+            class="pic1"
+          />
+          <div class="a1">
+            <h2 class="head1">Jung Kook</h2>
+            <p class="head2">
+              Jeon Jung-kook (Korean: 전정국; born September 1, 1997)
+            </p>
+            <p class="p1">
+              &emsp;&emsp;&emsp;Maecenas ultricies nunc nibh, vitae auctor ex
+              tristique viverra. Praesent interdum, orci id viverra faucibus,
+              mauris turpis mollis eros, a imperdiet nisi justo non enim. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor
+              nulla orci, vitae pellentesque risus semper sit amet. Suspendisse
+              lobortis neque ante, id auctor neque semper sed. Aliquam ut sem
+              quis tellus vehicula hendrerit ac ut neque. Curabitur a luctus
+              nulla. In non malesuada lorem. Aliquam bibendum sed leo eu
+              vulputate. Integer eget rutrum augue. Donec diam est, pulvinar ut
+              eros quis, ultricies elementum ipsum. Praesent at finibus enim.
+              Pellentesque sit amet dapibus orci, in porta erat. Proin facilisis
+              sagittis egestas. Mauris finibus tincidunt nisl a condimentum. In
+              commodo nibh nisl, ac blandit tellus venenatis eu.<br />>>
+              <a href="https://youtu.be/IwzkfMmNMpM" id="link" target="_blank"
+                >정국 Jung Kook (of BTS) featuring Fahad Al Kubaisi - Dreamers |
+                FIFA World Cup 2022 Soundtrack</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
